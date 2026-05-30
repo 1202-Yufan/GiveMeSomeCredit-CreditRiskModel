@@ -1,0 +1,12 @@
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Local temporary screenshots
+截屏*.png
+
+# Local environment files
+.env
+.venv/
+venv/
