@@ -29,7 +29,6 @@ The Decile/Lift analysis shows that the highest-risk 10% of borrowers captured 5
 ## Files
 
 - `programe.ipynb`: Main notebook containing data cleaning, feature engineering, modeling, and evaluation.
-- `programe.py`: Python script version of the initial modeling workflow.
 - `give_me_some_credit.pdf`: Final project report.
 - `cs-training.csv`: Training dataset.
 - `cs-test.csv`: Kaggle test dataset.
