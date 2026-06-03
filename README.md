@@ -18,25 +18,23 @@ The project follows a typical offline credit risk modeling workflow:
 
 ## Key Results
 
-The final Logistic WOE model achieved the following validation performance:
-
 | Model | AUC | KS | Gini |
 |---|---:|---:|---:|
 | Logistic WOE Scorecard | 0.857 | 0.567 | 0.713 |
 
-The Decile/Lift analysis shows that the highest-risk 10% of borrowers captured 52.82% of all bad borrowers. In the cutoff strategy analysis, rejecting the top 20% highest-risk borrowers captured 71.07% of bad borrowers and reduced the approved population bad rate to 2.41%.
+The highest-risk 10% of borrowers captured 52.82% of all bad borrowers. Rejecting the top 20% highest-risk borrowers captured 71.07% of bad borrowers and reduced the approved population bad rate to 2.41%.
 
 ## Files
 
-- `programe.ipynb`: Main notebook containing data cleaning, feature engineering, modeling, and evaluation.
+- `credit_risk_scorecard.ipynb`: Main notebook containing data cleaning, feature engineering, modeling, and evaluation.
 - `give_me_some_credit.pdf`: Final project report.
-- `cs-training.csv`: Training dataset.
-- `cs-test.csv`: Kaggle test dataset.
+- `cs-training.csv`: Labelled training dataset.
+- `cs-test.csv`: Kaggle test dataset without observable target labels.
 - `Data Dictionary.xls`: Original variable descriptions.
 - `requirements.txt`: Python package requirements.
 
-## Notes
+## How to Run
 
-The official Kaggle test set does not contain observable target labels, so model validation is performed using a stratified hold-out validation set split from the training data.
-
-This project is intended as an academic and portfolio project for credit risk modeling practice.
+```bash
+pip install -r requirements.txt
+jupyter notebook credit_risk_scorecard.ipynb
